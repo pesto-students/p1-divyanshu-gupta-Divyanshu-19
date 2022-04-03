@@ -29,6 +29,28 @@ body {
   flex: 70%;
 }
 
+.nav-left {
+  flex: 2%;
+  background-color: rgb(241, 240, 241);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content {
+  flex: 98%;
+  flex-direction: column;
+}
+
+.content-info {
+  flex: 35%;
+  background-color: rgb(69, 69, 69);
+}
+
+.content-list {
+  flex: 65%;
+}
+
 .cattyboard-controller {
   background-color: rgb(66, 104, 154);
   color: white;
