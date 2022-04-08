@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+}
+
+.upper-body {
+  flex: 70%;
+}
+
+.nav-left {
+  flex: 2%;
+  background-color: rgb(241, 240, 241);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content {
+  display: flex;
+  flex: 98%;
+  flex-direction: column;
+}
+
+.content-info-image {
+  flex: 35%;
+  background-color: rgb(69, 69, 69);
+  color: white;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.content-info {
+  flex-direction: column;
+}
+
+.content-image {
+  width: 200px;
+  margin: 20px;
+}
+
+.content-info-header {
+  font-size: x-large;
+  padding: 10px 0px;
+}
+
+.content-info-artist,
+.content-info-desc {
+  font-size: small;
+  padding: 0px 0px 5px 0px;
+}
+
+.content-info-buttons {
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 70px;
+}
+
+.content-info-button-group {
+  padding: 0px 20px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.content-info-button-group:first-child {
+  margin-left: 0px;
+}
+
+.content-info-button-group > div {
+  padding-left: 5px;
+}
+
+.content-list {
+  flex: 65%;
+  flex-direction: column;
+  justify-content: start;
+  margin: 20px 10px 10px 10px;
+}
+
+.content-list-item {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.content-list-item > div {
+  width: 20%;
+}
+
+.content-list-item:nth-child(2n) {
+  background-color: rgb(241, 240, 241);
+}
+
+.content-list-item-link {
+  border: 1px solid black;
+  padding: 2px;
+  color: blue;
+  width: fit-content;
+}
+
+.cattyboard-controller {
+  background-color: rgb(66, 104, 154);
+  color: white;
+}
+
+.cattyboard-controller-icon {
+  margin: auto 40px auto 40px;
+}
+
+.cattyboard-controller-icon:last-child {
+  margin: auto 15px auto 40px;
+}
+
+.cattyboard-song-info {
+  flex: 50%;
+  padding-left: 20px;
+}
+
+.cattyboard-song-info > div {
+  padding-top: 10px;
+}
+
+.cattyboard-controller-image {
+  width: 100px;
+  padding: 10px;
+}
