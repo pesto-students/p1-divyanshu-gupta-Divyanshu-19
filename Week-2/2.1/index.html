@@ -108,13 +108,25 @@
     <div class="feedback">
       <h2>Like Our Article? Leave Us a Feedback</h2>
       <div class="form">
-        <form method="POST">
-          <label for="firstName">First Name <input type="text" /></label>
-          <label for="lastName">Last Name <input type="text" /></label>
-          <label for="email">Email <input type="email" /></label>
+        <form action="">
+          <label for="firstName"
+            >First Name <input required type="text"
+          /></label>
+          <label for="lastName">Last Name <input required type="text" /></label>
+          <label for="email"
+            >Email <input required type="email" pattern=".*@gmail.com"
+          /></label>
           <label for="comment"
             >Comment:
-            <textarea name="comment" id="" cols="30" rows="5"></textarea>
+            <textarea
+              minlength="10"
+              maxlength="200"
+              required
+              name="comment"
+              id=""
+              cols="30"
+              rows="5"
+            ></textarea>
           </label>
 
           <input type="submit" value="Submit" />
