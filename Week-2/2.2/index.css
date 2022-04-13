@@ -34,15 +34,37 @@
     background-color: green;
 }
 
-.container:hover{
-    animation-name: in;
-
+.container:hover .ur{
+    animation-name: showur;
 }
 
-.container:hover .ur{
+.container .ur{
+    animation-name: showur-reverse;
+}
+
+@keyframes showur {
+    to{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    
+}
+
+@keyframes showur-reverse {
+    from{
+        transform: skewX(10rem);
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: top right;
+    }
+    
+}
+
+/* .container:hover .ur{
     transform: rotate(-90deg);
     transform-origin: top right;
-}
+} */
 
 .container:hover .ul{
     transform: rotate(90deg);

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noticia+Text:wght@400;700&display=swap');
+
+body {
+  background-color: blanchedalmond;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noticia Text', serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+main {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin: 1rem 2rem;
+}
+
+.column article {
+  margin: 2rem 0rem;
+  background-color: aquamarine;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+img {
+  margin: 2rem 0rem;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    display: block;
+  }
+}
+
+.feedback {
+  text-align: center;
+  border: 1px solid darkgreen;
+}
+
+form input {
+  text-align: center;
+}
+
+.form {
+  margin-left: 10%;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 2rem 0rem;
+}
