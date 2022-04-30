@@ -1,0 +1,89 @@
+.container{
+    border: 1px solid black;
+    margin-top: 10rem;
+    position: relative;
+    
+}
+
+.inner-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ul,.ur,.ll,.lr{
+    width: 10rem;
+    height: 10rem;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.ul {
+    background-color: red;
+}
+
+.ur {
+    background-color: yellow;
+
+}
+
+.ll{
+    background-color: blue;
+}
+
+.lr{
+    background-color: green;
+}
+
+.container:hover .ur{
+    animation-name: showur;
+}
+
+.container .ur{
+    animation-name: showur-reverse;
+}
+
+@keyframes showur {
+    to{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    
+}
+
+@keyframes showur-reverse {
+    from{
+        transform: skewX(10rem);
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: top right;
+    }
+    
+}
+
+/* .container:hover .ur{
+    transform: rotate(-90deg);
+    transform-origin: top right;
+} */
+
+.container:hover .ul{
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.container:hover .ll{
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+
+.container:hover .lr{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+
+h1{
+    position: absolute;
+    top: 8rem;
+    margin: 0 48%;
+    z-index: -1;
+}
