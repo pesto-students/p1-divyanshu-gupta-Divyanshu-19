@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > h1 {
+  margin: 1rem 2rem;
+}
+
+.nav {
+  margin-top: 1.5rem;
+}
+
+.nav > a {
+  margin: 1rem 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.nav > a:hover {
+  color: rgb(83, 69, 69);
+}

@@ -1,0 +1,54 @@
+.inputUrl {
+  width: 65%;
+  padding: 1rem 0.5rem;
+  border-radius: 0.6rem;
+  margin: 2rem 1rem;
+}
+
+.inputButton {
+  padding: 0.8rem 2rem;
+  background-color: lightblue;
+  border-radius: 1rem;
+  color: white;
+}
+
+.inputButton:hover {
+  background-color: rgb(145, 184, 197);
+}
+
+.mainInput {
+  border-radius: 0.8rem;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: rgb(84, 84, 245);
+}
+.container {
+  border: 1px solid black;
+  width: 70%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+.copyButton {
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  border-radius: 0.6rem;
+  margin: 1rem 0.5rem 1rem 1.5rem;
+  color: whitesmoke;
+}
+
+.mainUrl {
+  font-size: large;
+  margin: 1rem 3rem 1rem 1rem;
+  text-align: left;
+}
+
+.shortUrl {
+  color: rgb(37, 37, 204);
+  margin: 1rem 0rem 1rem 5rem;
+}
+
+.secondContainer {
+  border: 1px solid black;
+  margin: 1rem 2rem;
+}
