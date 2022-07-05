@@ -1,0 +1,15 @@
+// 1
+SELECT * FROM items where weight=(SELECT Min(weight) from items);
+
+// 2
+SELECT * from warehouse inner join cities on warehouse.cityid=cities.cityid where cities.city='pune';
+
+// 3
+SELECT * from items inner join itemsRorders on itemsRorders.itemno = items.itemno where itemsRorders.ono in (SELECT ono from orders inner join customer on orders.cno = customer.cno where customer.cname='Mr. patil' )
+
+// 4
+SELECT w.wid, w.wname, w.location, w.cityid from warehouse w inner join stores on stores.wid=w.wid where stores.wid=(SELECT wid from (SELECT wid, count(wid) from stores group by wid) g limit 1) limit 1;
+
+// 5
+
+SELECT * from items where itemno=(SELECT itemno from (SELECT itemno, count(itemno) as c from itemsRorders group by itemno order by c desc) g limit 1);
