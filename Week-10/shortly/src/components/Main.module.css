@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > div {
+  margin: 6rem 5rem 0rem 5rem;
+}
+
+.container > div > h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container > div > div {
+  font-size: 1rem;
+  word-spacing: 0.2rem;
+}
+
+.container > img {
+  width: 20rem;
+  margin-right: 8rem;
+}
