@@ -129,7 +129,6 @@ app.get('/data', async (req, res) => {
   if (city) {
     cityarr = city.split(',');
   }
-  console.log(cityarr);
   try {
     let resultarr = [];
     for (const city of cityarr) {
